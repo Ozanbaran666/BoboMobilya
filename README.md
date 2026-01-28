@@ -1,23 +1,31 @@
-### Hi there 👋
+# Bobo Mobilya – Kurumsal Web Sitesi
 
-My name is Ozan Baran, I'm based in Turkey, Istanbul.
-I am working on algorithm and programming and still improving myself on developing web sites. I am also following up new trends in programming technologies, innovations and enterprises on web domains.
+Bobo Mobilya için geliştirilmiş modern ve kullanıcı dostu bir kurumsal web sitesi projesidir.  
+Proje, firmanın ürünlerini ve marka kimliğini dijital ortamda etkili şekilde yansıtmayı hedefler.
 
-## 💼 Job
+## 🚀 Proje Hakkında
 
-I'm working as a E-Commerce Manager.
+Bu web sitesi;
+- Bobo Mobilya’nın ürünlerini sergilemek
+- Firma hakkında temel bilgileri sunmak
+- Kullanıcıların firma ile kolayca iletişime geçmesini sağlamak  
+amacıyla geliştirilmiştir.
 
-## 🧠 Know / Using
-<img src="https://github.com/github/explore/blob/master/topics/bootstrap/bootstrap.png?raw=true" height="32" /><img src="https://github.com/github/explore/blob/master/topics/visual-studio-code/visual-studio-code.png?raw=true" height="32" /><img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png?raw=true" height="32" />
+Responsive (mobil uyumlu) yapıya sahiptir ve sade, anlaşılır bir tasarım anlayışı benimsenmiştir.
 
-## 📚 Learning
+## 🛠️ Kullanılan Teknolojiler
 
-<img src="https://github.com/github/explore/blob/master/topics/docker/docker.png?raw=true" height="32" /><img src="https://github.com/github/explore/blob/master/topics/vue/vue.png?raw=true" height="32" /><img src="https://github.com/github/explore/blob/master/topics/angular/angular.png?raw=true" height="32" /><img src="https://raw.githubusercontent.com/github/explore/master/topics/redis/redis.png?raw=true" height="32" />
+- **HTML5**
+- **CSS3**
+- **JavaScript**
 
-## 📝 How to contact me?
 
-You can find and get touch with me on these accounts!
+## 📂 Proje Özellikleri
 
-[![Linkedin Badge](https://img.shields.io/badge/ozanbaran666-follow%20on%20linkedin-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/ozanbaran666/)
+- Responsive tasarım (mobil, tablet, masaüstü uyumlu)
+- Ürün tanıtım sayfaları
+- Hakkımızda ve iletişim bölümleri
+- Temiz ve okunabilir kod yapısı
+- SEO uyumlu HTML yapısı
 
-[![Instagram Badge](https://img.shields.io/badge/ozanbaran666-follow%20on%20instagram-blue?style=for-the-badge&logo=instagram)](https://www.instagram.com/ozanbaran666/)
+
