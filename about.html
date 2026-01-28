@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BOBOMOBİLYA – Hakkımızda</title>
+
+  <link rel="stylesheet" href="style/about.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- NAVBAR (hero üstünde şeffaf, scroll’da beyaz) -->
+  <header class="nav-wrap hero-start">
+    <div class="nav container">
+      <!-- Sol: Menü -->
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Anasayfa</a></li>
+          <li><a href="collections.html">Ürünler</a></li>
+          <li><a class="active" href="about.html">Hakkımızda</a></li>
+          <li><a href="contact.html">İletişim</a></li>
+        </ul>
+      </nav>
+
+      <!-- Orta: Logo -->
+<a class="logo" href="index.html" aria-label="BOBOMOBİLYA">
+  <img class="logo-img" src="materials/logo.png" alt="BOBOMOBİLYA" height="28" fetchpriority="high">
+</a>
+
+      <!-- Sağ: İkonlar + En Sağ Arama -->
+      <div class="nav-right">
+        <div class="nav-actions">
+          <button class="hamburger icon-btn" id="hamburger" aria-label="Menü">≡</button>
+        </div>
+
+        <form class="nav-search" role="search" action="/search" method="get">
+          <button type="submit" class="icon-btn search-toggle" aria-label="Ara" title="Ara">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <input type="search" name="q" placeholder="Ara..." aria-label="Sitede ara">
+        </form>
+      </div>
+    </div>
+
+    <!-- Mobil menü -->
+    <nav id="mobileMenu" class="mobile-menu" aria-hidden="true">
+      <a href="index.html">Anasayfa</a>
+      <a href="collections.html">Ürünler</a>
+      <a href="about.html" aria-current="page">Hakkımızda</a>
+      <a href="contact.html">İletişim</a>
+    </nav>
+  </header>
+
+  <!-- HERO (üst görsel + metin) -->
+  <section class="about-hero" style="background-image:url('materials/mobilya1.jpeg')">
+    <div class="about-hero__overlay"></div>
+    <div class="about-hero__inner container">
+      <h1>30 yılı aşan ustalıkla, evinizin karakterini tasarlıyoruz.</h1>
+      <p>İyi malzeme, doğru oran ve uzun ömür. Bugünün konforu, yarının klasiklerine dönüşsün.</p>
+    </div>
+  </section>
+
+  <!-- Giriş metni -->
+  <section class="about-intro container">
+    <h2>Sizin için çalışıyoruz; göz zevkiniz için en iyisini üretiyoruz.</h2>
+    <p>
+      BOBOMOBİLYA, üretimin kalbinde doğan bir atölyenin yıllar içinde modern bir fabrikaya
+      dönüşmesinin hikayesidir. Masif ahşabın sabrı, metalin direnci ve kumaşın dokusunu aynı
+      çizgide buluşturuyoruz. Tüm koleksiyonlarımızda modüler düşünür, ölçüye göre şekillendirir,
+      mekana ve alışkanlıklara göre uzun ömürlü çözümler geliştiririz. Tedarikten montaja kadar
+      her adımı kayıt altına alır, sürdürülebilirlik hedefleriyle üretiriz.
+    </p>
+  </section>
+
+  <!-- Split blok 1 -->
+  <section class="about-split container">
+    <div class="split-media">
+      <img src="materials/mobilya2.jpeg" alt="Atölye ve detay işçilik">
+    </div>
+    <div class="split-text">
+      <h3>İşçilikte hassasiyet, detayda süreklilik</h3>
+      <p>
+        Her parça CNC ile hassas kesime girer, el işçiliğiyle tamamlanır. Kenar bantlamadan verniğe,
+        oturum konforundan dikiş adımına kadar kalite kontrol listemiz canlıdır. Malzeme israfını
+        en aza indirmek için kesim planları algoritmik olarak hazırlanır.
+      </p>
+      <ul class="ticks">
+        <li>FSC sertifikalı ahşaplar</li>
+        <li>Uzun ömürlü bağlantı ve donanım</li>
+        <li>Kolay servis ve parça tedariki</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Split blok 2 (ters) -->
+  <section class="about-split container reverse">
+    <div class="split-media">
+      <img src="materials/mobilya3.jpeg" alt="Showroom ve koleksiyon">
+    </div>
+    <div class="split-text">
+      <h3>Tasarım, kullanım alışkanlığıyla anlam kazanır</h3>
+      <p>
+        Tasarım ekibimiz ölçülerinize göre yerleşim önerileri hazırlar; renk, doku ve ışıkla
+        birlikte düşünür. Ürünlerin sökülüp takılabilen modüler yapısı taşınırken de konfor sağlar.
+        Kısacası, eşyalar sizden önce davranmaz; size uyar.
+      </p>
+      <ul class="ticks">
+        <li>Modüler ve kişiselleştirilebilir sistemler</li>
+        <li>Proje ve mimari destek</li>
+        <li>Garantili teslim ve kurulum</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Değerler / sayılar -->
+  <section class="about-stats container">
+    <article><strong>30+</strong><span>yıl deneyim</span></article>
+    <article><strong>120K+</strong><span>teslim edilen ürün</span></article>
+    <article><strong>40+</strong><span>ülkeye sevkiyat</span></article>
+    <article><strong>0</strong><span>rastgele vida</span></article>
+  </section>
+
+  <!-- Galeri Slider (footer’dan hemen önce) -->
+  <section class="brand-gallery">
+    <div class="container">
+      <h3>Üretimden kareler</h3>
+      <div class="gallery-slider" id="brandSlider" data-autoplay="1">
+        <button class="g-prev" aria-label="Önceki">
+          <svg viewBox="0 0 24 24"><polyline points="15 6 9 12 15 18"/></svg>
+        </button>
+        <div class="g-track">
+          <!-- 12-15 görsel, istediğin kadar çoğalt -->
+          <div class="g-slide"><img src="materials/mobilya13.jpeg" alt=""></div>
+          <div class="g-slide"><img src="materials/mobilya14.jpeg" alt=""></div>
+          <div class="g-slide"><img src="materials/mobilya15.jpeg" alt=""></div>
+          <div class="g-slide"><img src="materials/mobilya23.jpeg" alt=""></div>
+          <div class="g-slide"><img src="materials/mobilya33.jpeg" alt=""></div>
+          <div class="g-slide"><img src="materials/mobilya43.jpeg" alt=""></div>
+          <div class="g-slide"><img src="materials/mobilya16.jpeg" alt=""></div>
+          <div class="g-slide"><img src="materials/mobilya21.jpeg" alt=""></div>
+          <div class="g-slide"><img src="materials/mobilya22.jpeg" alt=""></div>
+          <div class="g-slide"><img src="materials/mobilya17.jpeg" alt=""></div>
+         <div class="g-slide"><img src="materials/mobilya16.jpeg" alt=""></div>
+          <div class="g-slide"><img src="materials/mobilya25.jpeg" alt=""></div>
+          <div class="g-slide"><img src="materials/mobilya29.jpeg" alt=""></div>
+          <div class="g-slide"><img src="materials/mobilya36.jpeg" alt=""></div>
+          <div class="g-slide"><img src="materials/mobilya33.jpeg" alt=""></div>
+        </div>
+        <button class="g-next" aria-label="Sonraki">
+          <svg viewBox="0 0 24 24"><polyline points="9 6 15 12 9 18"/></svg>
+        </button>
+        <div class="g-dots" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+   <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="brand"><span class="brand-stick"></span><span class="brand-text">Bobo</span></div>
+        <p class="brand-desc">Bobo Mobilya, 30 yılı aşkın tecrübesiyle, kaliteli ve zarif mobilya
+          tasarımlarını yaşam alanlarınıza taşımaktadır. Kişiye özel çözümler, üstün işçilik
+          ve ücretsiz tasarım danışmanlığı ile hayalinizdeki yaşam alanlarını gerçeğe dönüştürüyoruz.</p>
+      </div>
+      <div class="footer-col">
+        <h5 class="footer-title">KURUMSAL</h5>
+        <ul class="footer-links">
+          <li><a href="about.html">Hakkımızda</a></li>
+          <li><a href="contact.html">Kariyer</a></li>
+          <li><a href="contact.html">İletişim</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 class="footer-title">GİZLİLİK VE POLİTİKALAR</h5>
+        <ul class="footer-links">
+          <li><a href="legal.html#kvkk">KVKK Aydınlatma Metni</a></li>
+          <li><a href="legal.html#cookies">Çerez Politikası</a></li>
+          <li><a href="legal.html#cctv">CCTV Aydınlatma Metni</a></li>
+          <li><a href="legal.html">3. Kişi Aydınlatma Metni</a></li>
+          <li><a href="legal.html">3. Kişi Açık Rıza Metni</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 class="footer-title">Bobo Dünyasına Yakın Kalın!</h5>
+        <p class="footer-sub">Yenilikleri ve koleksiyonları ilk keşfeden siz olun.</p>
+        <form class="newsletter-form" action="#!" method="post">
+          <input type="email" required placeholder="E-postanız" aria-label="E-posta">
+          <button type="submit">ABONE</button>
+        </form>
+        <div class="socials" aria-label="Sosyal medya">
+          <a href="http://instagram.com/bobomobilya/" aria-label="Instagram" class="social"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
+          <a href="https://www.youtube.com/@bobomobilya" aria-label="YouTube" class="social"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><rect x="3" y="7" width="18" height="10" rx="2.5" stroke="currentColor" stroke-width="1.5"/><path d="M11 10l4 2-4 2v-4z" fill="currentColor"/></svg></a>
+          <a href="https://www.facebook.com/bobomobilya/" aria-label="Facebook" class="social"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><path d="M14 8h2V5h-2c-2 0-3 .9-3 3v2H9v3h2v6h3v-6h2.1L17 10h-3V8c0-.7.3-1 1-1z" fill="currentColor"/></svg></a>
+          <a href="#!" aria-label="LinkedIn" class="social"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><path d="M6.5 9.5v9H3.8v-9h2.7zM5.1 4.5a1.6 1.6 0 110 3.2 1.6 1.6 0 010-3.2zM20.2 18.5V13c0-3-1.6-4.4-3.7-4.4-1.7 0-2.5.9-3 1.6v-1.4H9v9h2.7v-4.8c0-1.3.2-2.6 2-2.6 1.7 0 1.8 1.5 1.8 2.7v4.7h2.7z" fill="currentColor"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container bottom-inner">
+        <div class="copyright">© 2025 Bobo Mobilya. Tüm Hakları Saklıdır.</div>
+        <div class="powered">Powered by <a href="https://instagram.com/ozanbaran666">brancnar</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script/about.js"></script>
+</body>
+</html>

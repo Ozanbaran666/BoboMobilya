@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Ürün</title>
+
+  <link rel="stylesheet" href="style/product.css?v=2.0.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="product-page">
+  <!-- NAVBAR -->
+  <header class="nav-wrap">
+    <div class="nav container">
+      <nav class="main-nav" aria-label="Birincil">
+        <ul>
+          <li><a href="index.html">Anasayfa</a></li>
+          <li><a href="collections.html" class="active">Ürünler</a></li>
+          <li><a href="about.html">Hakkımızda</a></li>
+          <li><a href="contact.html">İletişim</a></li>
+        </ul>
+      </nav>
+
+      <a class="logo" href="index.html">BOBOMOBİLYA</a>
+
+      <div class="nav-right">
+        <div class="nav-actions">
+          <a href="#account" class="icon-btn" aria-label="Hesabım" title="Hesabım">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5Zm0 2c-4.418 0-8 2.239-8 5v1h16v-1c0-2.761-3.582-5-8-5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <button class="hamburger icon-btn" id="hamburger" aria-label="Menü" aria-controls="mobileMenu" aria-expanded="false">≡</button>
+        </div>
+
+        <form class="nav-search" role="search" id="navSearch" action="/search" method="get">
+          <button type="submit" class="icon-btn search-toggle" aria-label="Ara" title="Ara">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <input type="search" name="q" placeholder="Ara..." aria-label="Sitede ara" />
+        </form>
+      </div>
+    </div>
+
+    <nav id="mobileMenu" class="mobile-menu" aria-hidden="true">
+      <a href="index.html">Anasayfa</a>
+      <a href="collections.html" class="active">Ürünler</a>
+      <a href="about.html">Hakkımızda</a>
+      <a href="contact.html">İletişim</a>
+    </nav>
+  </header>
+
+  <!-- BAŞLIK -->
+  <section class="container product-header">
+    <div class="breadcrumbs">
+      <a href="index.html">Ana Sayfa</a> /
+      <a href="collections.html">Koleksiyonlar</a> /
+      <span id="crumbTitle">Ürün</span>
+    </div>
+    <h1 id="productTitle" class="product-title">Ürün</h1>
+  </section>
+
+  <!-- ANA BLOK -->
+  <main class="container product-main">
+    <div class="gallery" id="gallery"></div>
+
+    <article class="product-info">
+      <h2 class="visually-hidden">Ürün Açıklaması</h2>
+      <p id="productDesc" class="product-desc"></p>
+
+      <div class="specs">
+        <h3>Ölçüler</h3>
+        <ul id="specList" class="spec-list"></ul>
+      </div>
+
+      <div class="price-cta">
+        <div class="price-box">
+          <div class="price-top">
+            <span class="price-label">Fiyat</span>
+            <strong id="price" class="price">—</strong>
+          </div>
+          <small class="price-note">Proje ve kumaş seçimine göre değişebilir.</small>
+        </div>
+        <div class="cta-buttons">
+          <a id="askOffer" href="contact.html" class="btn primary">Teklif Al</a>
+          <a href="contact.html" class="btn ghost">Showroom Randevusu</a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <!-- İLGİLİ ÜRÜNLER -->
+  <section class="container related">
+    <div class="related-head">
+      <h3>İlginizi çekebilir</h3>
+      <div class="rel-controls">
+        <button id="relPrev" aria-label="Önceki">‹</button>
+        <button id="relNext" aria-label="Sonraki">›</button>
+      </div>
+    </div>
+    <div class="rel-viewport">
+      <div id="relTrack" class="rel-track"></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="brand"><span class="brand-stick"></span><span class="brand-text">Bobo</span></div>
+        <p class="brand-desc">Bobo Mobilya, 30 yılı aşkın tecrübesiyle, kaliteli ve zarif mobilya
+          tasarımlarını yaşam alanlarınıza taşır. Kişiye özel çözümler ve üstün işçilik ile hayallerinizi gerçeğe dönüştürüyoruz.</p>
+      </div>
+      <div class="footer-col">
+        <h5 class="footer-title">KURUMSAL</h5>
+        <ul class="footer-links">
+          <li><a href="about.html">Hakkımızda</a></li>
+          <li><a href="contact.html">Kariyer</a></li>
+          <li><a href="contact.html">İletişim</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 class="footer-title">GİZLİLİK VE POLİTİKALAR</h5>
+        <ul class="footer-links">
+          <li><a href="legal.html#kvkk">KVKK Aydınlatma Metni</a></li>
+          <li><a href="legal.html#cookies">Çerez Politikası</a></li>
+          <li><a href="legal.html#cctv">CCTV Aydınlatma Metni</a></li>
+          <li><a href="legal.html">3. Kişi Aydınlatma Metni</a></li>
+          <li><a href="legal.html">3. Kişi Açık Rıza Metni</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 class="footer-title">Bobo Dünyasına Yakın Kalın!</h5>
+        <p class="footer-sub">Yenilikleri ve koleksiyonları ilk keşfeden siz olun.</p>
+        <form class="newsletter-form" action="#!" method="post">
+          <input type="email" required placeholder="E-postanız" aria-label="E-posta">
+          <button type="submit">ABONE</button>
+        </form>
+        <div class="socials" aria-label="Sosyal medya">
+          <a href="http://instagram.com/bobomobilya/" aria-label="Instagram" class="social">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/>
+            </svg>
+          </a>
+          <a href="https://www.youtube.com/@bobomobilya" aria-label="YouTube" class="social">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true">
+              <rect x="3" y="7" width="18" height="10" rx="2.5" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M11 10l4 2-4 2v-4z" fill="currentColor"/>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/bobomobilya/" aria-label="Facebook" class="social">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true">
+              <path d="M14 8h2V5h-2c-2 0-3 .9-3 3v2H9v3h2v6h3v-6h2.1L17 10h-3V8c0-.7.3-1 1-1z" fill="currentColor"/>
+            </svg>
+          </a>
+          <a href="#!" aria-label="LinkedIn" class="social">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true">
+              <path d="M6.5 9.5v9H3.8v-9h2.7zM5.1 4.5a1.6 1.6 0 110 3.2 1.6 1.6 0 010-3.2zM20.2 18.5V13c0-3-1.6-4.4-3.7-4.4-1.7 0-2.5.9-3 1.6v-1.4H9v9h2.7v-4.8c0-1.3.2-2.6 2-2.6 1.7 0 1.8 1.5 1.8 2.7v4.7h2.7z" fill="currentColor"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container bottom-inner">
+        <div class="copyright">© 2025 Bobo Mobilya. Tüm Hakları Saklıdır.</div>
+        <div class="powered">Powered by <a href="https://instagram.com/ozanbaran666">brancnar</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script/product.js?v=2.0.0"></script>
+</body>
+</html>

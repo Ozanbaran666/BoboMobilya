@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Arama Sonuçları</title>
+  <link rel="stylesheet" href="style/index.css" />
+</head>
+<body>
+  <header class="nav-wrap scrolled">
+    <div class="nav container">
+      <nav class="main-nav"><ul>
+        <li><a href="index.html">Anasayfa</a></li>
+        <li><a href="collections.html">Ürünler</a></li>
+        <li><a href="about.html">Hakkımızda</a></li>
+        <li><a href="contact.html">İletişim</a></li>
+      </ul></nav>
+      <a class="logo" href="index.html" aria-label="BOBOMOBİLYA">
+        <img class="logo-img" src="materials/logo.png" alt="BOBOMOBİLYA" height="28">
+      </a>
+      <div></div>
+    </div>
+  </header>
+
+  <main class="container section">
+    <h1>Arama</h1>
+    <p id="q" class="muted"></p>
+    <p>Buraya gerçek sonuçları listeleyeceksin. Şimdilik dekor.</p>
+  </main>
+
+  <script>
+    const params = new URLSearchParams(location.search);
+    const q = params.get('q') || '';
+    document.getElementById('q').textContent = q ? `Aranan: “${q}”` : 'Bir şey aramadın, yine de geldin.';
+  </script>
+</body>
+</html>

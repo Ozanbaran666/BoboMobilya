@@ -1,0 +1,23 @@
+# --- 404 özel sayfa tanımı ---
+ErrorDocument 404 /404.html
+
+RewriteEngine On
+
+# 404 sayfasını asla yönlendirme (kanonik/https gibi kurallardan muaf)
+RewriteCond %{REQUEST_URI} ^/404\.html$ [NC]
+RewriteRule ^ - [L]
+
+# BURADAN SONRA mevcut kuralların
+# Örnekler:
+# HTTP -> HTTPS
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# www -> çıplak alan adı (istersen tersini kullan)
+RewriteCond %{HTTP_HOST} ^www\.bobomobilya\.com$ [NC]
+RewriteRule ^ https://bobomobilya.com%{REQUEST_URI} [R=301,L]
+
+# UTM/gclid temizliği (opsiyonel)
+RewriteCond %{QUERY_STRING} (^|&)utm_ [NC,OR]
+RewriteCond %{QUERY_STRING} (^|&)(gclid|fbclid)= [NC]
+RewriteRule ^ %{REQUEST_URI}? [R=301,L]
